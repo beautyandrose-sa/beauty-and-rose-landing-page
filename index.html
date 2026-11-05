@@ -10,22 +10,22 @@
      (These must stay as static HTML so WhatsApp, Instagram and
      Google can read them without running JavaScript.)
      ============================================================ -->
-<title>Beauty &amp; Rose | صالون تجميل نسائي في الرياض – احجزي موعدك</title>
-<meta name="description" content="Beauty &amp; Rose صالون تجميل نسائي في شمال الرياض. اختاري خدمتك من صبغات الشعر والتصفيف والعلاجات والمكياج والأظافر والعناية بالبشرة والرموش، واحجزي موعدك مباشرة عبر واتساب.">
-<meta name="theme-color" content="#F7F1EC">
+<title>عروض الجمعة البيضاء | Beauty &amp; Rose – احجزي عبر واتساب</title>
+<meta name="description" content="عروض الجمعة البيضاء من Beauty &amp; Rose في شمال الرياض: بروتين، هايلايت، تريتمنت، صبغة، بديكير ومناكير. اختاري عرضك واحجزي مباشرة عبر واتساب.">
+<meta name="theme-color" content="#F6DAD9">
 <meta name="format-detection" content="telephone=no">
 <!-- <link rel="canonical" href="https://YOUR-DOMAIN.com/"> -->
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_SA">
 <meta property="og:site_name" content="Beauty &amp; Rose">
-<meta property="og:title" content="Beauty &amp; Rose | جمالك يستحق الاهتمام">
-<meta property="og:description" content="اختاري خدمتك واحجزي موعدك بكل سهولة عبر واتساب – صالون تجميل نسائي في شمال الرياض.">
+<meta property="og:title" content="Beauty &amp; Rose | عروض الجمعة البيضاء">
+<meta property="og:description" content="عروض مميزة على الشعر والأظافر – اختاري عرضك واحجزي مباشرة عبر واتساب.">
 <meta property="og:url" content="https://YOUR-DOMAIN.com/">
 <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg"><!-- 1200×630 px recommended -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Beauty &amp; Rose | جمالك يستحق الاهتمام">
-<meta name="twitter:description" content="اختاري خدمتك واحجزي موعدك بكل سهولة عبر واتساب.">
+<meta name="twitter:title" content="Beauty &amp; Rose | عروض الجمعة البيضاء">
+<meta name="twitter:description" content="اختاري عرضك واحجزي موعدك مباشرة عبر واتساب.">
 <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
 
 <!-- Placeholder favicon (replace with your own: <link rel="icon" href="favicon.png">) -->
@@ -57,7 +57,7 @@ window.BR_CONFIG = {
   logoUrl: './beauty-and-rose-logo.jpg',
 
   /* Message used by the floating "احجزي موعدك الآن" button */
-  generalWhatsappMessage: 'مرحبًا، أرغب في الاستفسار عن خدمات Beauty & Rose وحجز موعد.',
+  generalWhatsappMessage: 'مرحبًا، أرغب في الاستفسار عن عروض الجمعة البيضاء وحجز موعد لدى Beauty & Rose.',
 
   /* If true, a short campaign reference (from utm_source / utm_campaign)
      is added to the end of WhatsApp messages so your team can see which
@@ -66,38 +66,32 @@ window.BR_CONFIG = {
 
   /* Brand colours (applied to the whole page automatically) */
   colors: {
-    ivory: '#F7F1EC',   // page background
-    dusty: '#EAD6D4',   // icon backgrounds, soft accents
-    deep:  '#693D48',   // primary: headings, CTA button
-    mauve: '#98616B',   // secondary: subtitles, arrows
-    white: '#FFFFFF'    // cards
+    ivory: '#F8E5E2',   // page background
+    dusty: '#EFCBCB',   // icon backgrounds, soft accents
+    deep:  '#7B1F2B',   // primary: headings, CTA button
+    mauve: '#A34D5B',   // secondary: subtitles, arrows
+    white: '#FFF9F6'    // cards
   },
 
-  /* Services — shown in this order. Each one opens WhatsApp with its own
-     message (unique per service for lead identification).
+  /* White Friday offers — shown in this order. Each one opens WhatsApp with
+     its own message (unique per offer for lead identification).
      icon options: hairColor, scissors, treatment, makeup, nails, facial, lashes */
   services: [
-    { id: 'hair_coloring',   category: 'hair',      icon: 'hairColor',
-      nameAr: 'صبغات الشعر والهايلايت',     nameEn: 'Hair Coloring',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة صبغات الشعر والهايلايت.' },
-    { id: 'hair_styling',    category: 'hair',      icon: 'scissors',
-      nameAr: 'قص وتصفيف الشعر',            nameEn: 'Hair Styling',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة قص وتصفيف الشعر.' },
-    { id: 'hair_treatments', category: 'hair',      icon: 'treatment',
-      nameAr: 'علاجات الشعر',               nameEn: 'Hair Treatments',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة علاجات الشعر.' },
-    { id: 'makeup',          category: 'makeup',    icon: 'makeup',
-      nameAr: 'المكياج والمناسبات',          nameEn: 'Makeup',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة المكياج والمناسبات.' },
-    { id: 'nails',           category: 'nails',     icon: 'nails',
-      nameAr: 'الأظافر والمناكير والبديكير', nameEn: 'Nails',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة الأظافر والمناكير والبديكير.' },
-    { id: 'facial',          category: 'skin_care', icon: 'facial',
-      nameAr: 'العناية بالبشرة',             nameEn: 'Facial',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة العناية بالبشرة.' },
-    { id: 'lashes',          category: 'lashes',    icon: 'lashes',
-      nameAr: 'الرموش',                     nameEn: 'Lashes',
-      message: 'مرحبًا، أرغب في الاستفسار وحجز موعد لخدمة الرموش.' }
+    { id: 'white_friday_hot_protein', category: 'white_friday_offer', icon: 'treatment',
+      nameAr: 'بروتين حار', price: '899',
+      message: 'مرحبًا، أرغب في حجز عرض الجمعة البيضاء: بروتين حار بسعر 899 ريال.' },
+    { id: 'white_friday_highlight_package', category: 'white_friday_offer', icon: 'scissors',
+      nameAr: 'هايلايت + رينساج + جلسة تريتمنت + قص أطراف شعر + سشوار', price: '1299',
+      message: 'مرحبًا، أرغب في حجز عرض الجمعة البيضاء: هايلايت + رينساج + جلسة تريتمنت + قص أطراف شعر + سشوار بسعر 1299 ريال.' },
+    { id: 'white_friday_cold_dandruff_treatment', category: 'white_friday_offer', icon: 'treatment',
+      nameAr: 'تريتمنت بارد للقشرة + سشوار', price: '699',
+      message: 'مرحبًا، أرغب في حجز عرض الجمعة البيضاء: تريتمنت بارد للقشرة + سشوار بسعر 699 ريال.' },
+    { id: 'white_friday_one_color', category: 'white_friday_offer', icon: 'hairColor',
+      nameAr: 'صبغة لون واحد + تريتمنت + سشوار', price: '599',
+      message: 'مرحبًا، أرغب في حجز عرض الجمعة البيضاء: صبغة لون واحد + تريتمنت + سشوار بسعر 599 ريال.' },
+    { id: 'white_friday_pedicure_manicure', category: 'white_friday_offer', icon: 'nails',
+      nameAr: 'بديكير + مناكير', price: '149',
+      message: 'مرحبًا، أرغب في حجز عرض الجمعة البيضاء: بديكير + مناكير بسعر 149 ريال.' }
   ],
 
   /* Tracking IDs.
@@ -106,7 +100,7 @@ window.BR_CONFIG = {
      If gtmId is filled, the direct IDs are ignored (prevents duplicate pixels).
      If gtmId is empty, any direct IDs you fill are loaded straight on the page. */
   tracking: {
-    gtmId:         'GTM-MWBPH87S',   // 'GTM-XXXXXXX'
+    gtmId:         'GTM-MWBPH87S',   // Beauty & Rose Google Tag Manager
     ga4Id:         '',   // 'G-XXXXXXXXXX'   (direct mode only)
     metaPixelId:   '',   // '123456789012345' (direct mode only)
     tiktokPixelId: '',   // 'CXXXXXXXXXXXXXXXXXXX' (direct mode only)
@@ -152,6 +146,7 @@ window.BR_CONFIG = {
       inject('https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(T.gtmId));
       state.loaded.gtm = true;
     }
+
     if (T.ga4Id || T.metaPixelId || T.tiktokPixelId || T.snapPixelId) {
       console.info('[Beauty & Rose] GTM is active – direct pixel IDs are ignored to avoid duplicate tracking. Configure those tags inside GTM.');
     }
@@ -214,19 +209,20 @@ window.BR_CONFIG = {
    DESIGN TOKENS (colours are overridden from BR_CONFIG.colors)
    ============================================================ */
 :root {
-  --c-ivory: #F7F1EC;
-  --c-dusty: #EAD6D4;
-  --c-deep:  #693D48;
-  --c-mauve: #98616B;
-  --c-white: #FFFFFF;
-  --c-text:  #3B2429;
-  --c-muted: #8B7176;
-  --line:    rgba(105, 61, 72, .10);
-  --line-strong: rgba(105, 61, 72, .22);
+  --c-ivory: #F8E5E2;
+  --c-dusty: #EFCBCB;
+  --c-deep:  #7B1F2B;
+  --c-mauve: #A34D5B;
+  --c-white: #FFF9F6;
+  --c-text:  #4A2026;
+  --c-muted: #8E656B;
+  --c-gold:  #C6985D;
+  --line:    rgba(123, 31, 43, .12);
+  --line-strong: rgba(123, 31, 43, .25);
 
   --radius: 20px;
-  --shadow-sm: 0 1px 2px rgba(105,61,72,.05), 0 6px 18px rgba(105,61,72,.06);
-  --shadow-md: 0 2px 4px rgba(105,61,72,.07), 0 14px 30px rgba(105,61,72,.13);
+  --shadow-sm: 0 2px 4px rgba(89,25,35,.06), 0 9px 24px rgba(89,25,35,.09);
+  --shadow-md: 0 3px 6px rgba(89,25,35,.08), 0 16px 34px rgba(89,25,35,.16);
 
   --font-ar: 'Cairo', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
   --font-en: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -240,9 +236,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font-ar);
   color: var(--c-text);
-  background:
-    radial-gradient(140% 55% at 50% -12%, var(--c-dusty) 0%, rgba(234,214,212,0) 62%),
-    var(--c-ivory);
+  background: var(--c-ivory);
   background-color: var(--c-ivory);
   line-height: 1.6;
   min-height: 100vh;
@@ -258,8 +252,8 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url('./salon-model-bg.png');
-  background-position: 68% top;
+  background-image: url('./white-friday-salon-bg-v2.png');
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -269,8 +263,8 @@ body::after {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(247,241,236,.45) 0%, rgba(247,241,236,.68) 42%, rgba(247,241,236,.88) 100%),
-    radial-gradient(100% 48% at 4% 2%, rgba(255,255,255,.22), transparent 66%);
+    linear-gradient(180deg, rgba(248,229,226,.10) 0%, rgba(248,229,226,.30) 46%, rgba(248,229,226,.64) 100%),
+    radial-gradient(90% 42% at 50% 3%, rgba(255,250,247,.32), transparent 70%);
   pointer-events: none;
 }
 a { color: inherit; }
@@ -299,10 +293,10 @@ img, svg { display: block; }
   margin: 0 auto 14px;
   padding: 3px;
   overflow: hidden;
-  border: 1px solid var(--line-strong);
+  border: 1px solid rgba(198, 152, 93, .72);
   border-radius: 25px;
-  background: rgba(255,255,255,.78);
-  box-shadow: 0 8px 24px rgba(105,61,72,.11);
+  background: rgba(255,249,246,.88);
+  box-shadow: 0 9px 26px rgba(89,25,35,.14), 0 0 0 4px rgba(255,249,246,.35);
   display: grid; place-items: center;
   color: var(--c-deep);
 }
@@ -345,10 +339,10 @@ img, svg { display: block; }
   display: flex; align-items: center; justify-content: center; gap: 8px;
   margin: 10px auto 8px;
 }
-.ornament span { width: 30px; height: 1px; background: var(--line-strong); }
+.ornament span { width: 30px; height: 1px; background: rgba(198, 152, 93, .72); }
 .ornament i {
   width: 5px; height: 5px; transform: rotate(45deg);
-  background: var(--c-mauve); opacity: .7;
+  background: var(--c-gold); opacity: .9;
 }
 
 .brand__tagline {
@@ -369,12 +363,12 @@ img, svg { display: block; }
 .section-label {
   display: flex; align-items: center; gap: 12px;
   font-size: 13px; font-weight: 600;
-  color: var(--c-mauve);
+  color: var(--c-deep);
   margin: 0 2px 12px;
   white-space: nowrap;
 }
 .section-label::before,
-.section-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.section-label::after { content: ""; flex: 1; height: 1px; background: rgba(198, 152, 93, .55); }
 
 /* ============================================================
    2 & 3. CARDS (services + salon info)
@@ -385,10 +379,10 @@ img, svg { display: block; }
   display: flex; align-items: center; gap: 14px;
   min-height: 78px;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, .90);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(255,250,247,.94), rgba(250,226,224,.91));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 152, 93, .34);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   text-decoration: none;
@@ -401,8 +395,9 @@ img, svg { display: block; }
 .card__icon {
   flex: 0 0 50px; height: 50px;
   border-radius: 15px;
-  background: var(--c-dusty);
-  color: var(--c-deep);
+  background: linear-gradient(145deg, #8B2834, #681621);
+  color: #FFF5ED;
+  box-shadow: inset 0 0 0 1px rgba(255,227,197,.22), 0 5px 14px rgba(89,25,35,.16);
   display: grid; place-items: center;
 }
 .card__icon svg { width: 25px; height: 25px; }
@@ -422,11 +417,54 @@ img, svg { display: block; }
   line-height: 1.5;
 }
 
+.card--offer {
+  min-height: 86px;
+  padding-block: 13px;
+}
+.card--offer .card__title {
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+.offer__price {
+  flex: 0 0 76px;
+  min-height: 58px;
+  padding: 7px 8px 6px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #8A2733, #671621);
+  color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(221, 177, 112, .82);
+  box-shadow: 0 7px 18px rgba(89, 25, 35, .22);
+}
+.offer__price strong {
+  font-family: var(--font-en);
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+.offer__price small {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@media (max-width: 390px) {
+  .card--offer { gap: 10px; padding-inline: 12px; }
+  .card--offer .card__icon { flex-basis: 46px; height: 46px; border-radius: 14px; }
+  .card--offer .card__title { font-size: 14.5px; }
+  .offer__price { flex-basis: 68px; min-height: 54px; }
+  .offer__price strong { font-size: 21px; }
+}
+
 .card__arrow {
   flex: 0 0 34px; height: 34px;
   border-radius: 50%;
-  background: var(--c-ivory);
-  color: var(--c-mauve);
+  background: rgba(255,249,246,.76);
+  color: var(--c-deep);
   display: grid; place-items: center;
   transition: transform .28s var(--ease), background-color .28s var(--ease), color .28s var(--ease);
 }
@@ -448,11 +486,15 @@ img, svg { display: block; }
 /* Salon info cards – slightly quieter so services stay the hero */
 .info { margin-top: 26px; }
 .card--info {
-  background: rgba(255, 255, 255, .76);
+  background: rgba(255, 248, 245, .82);
   box-shadow: none;
   min-height: 72px;
 }
-.card--info .card__icon { background: var(--c-white); box-shadow: inset 0 0 0 1px var(--line); }
+.card--info .card__icon {
+  background: rgba(123,31,43,.10);
+  color: var(--c-deep);
+  box-shadow: inset 0 0 0 1px rgba(123,31,43,.14);
+}
 .card--info .card__subtitle { font-family: var(--font-ar); font-size: 13px; letter-spacing: 0; color: var(--c-muted); }
 
 /* ============================================================
@@ -475,7 +517,7 @@ img, svg { display: block; }
   z-index: 50;
   display: flex; justify-content: center;
   padding: 18px 16px calc(14px + env(safe-area-inset-bottom));
-  background: linear-gradient(to top, var(--c-ivory) 58%, rgba(247, 241, 236, 0));
+  background: linear-gradient(to top, rgba(248,229,226,.98) 58%, rgba(248,229,226,0));
   pointer-events: none;
 }
 .cta-float__btn {
@@ -483,13 +525,14 @@ img, svg { display: block; }
   width: 100%; max-width: 448px;
   height: var(--cta-h);
   border-radius: 999px;
-  background: var(--c-deep);
+  background: linear-gradient(135deg, #8B2633, #67141F);
   color: var(--c-white);
   display: flex; align-items: center; justify-content: center; gap: 10px;
   text-decoration: none;
   font-weight: 700;
   font-size: 17px;
-  box-shadow: 0 10px 26px rgba(105, 61, 72, .32);
+  border: 1px solid rgba(220, 177, 112, .74);
+  box-shadow: 0 11px 28px rgba(89, 25, 35, .34);
   -webkit-tap-highlight-color: transparent;
   transition: transform .25s var(--ease), box-shadow .25s var(--ease), filter .25s var(--ease);
 }
@@ -569,17 +612,17 @@ img, svg { display: block; }
 
     <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
 
-    <p class="brand__tagline">جمالك يستحق الاهتمام</p>
-    <p class="brand__sub">اختاري خدمتك واحجزي موعدك بكل سهولة</p>
+    <p class="brand__tagline">عروض الجمعة البيضاء وصلت</p>
+    <p class="brand__sub">اختاري عرضك واحجزي موعدك بكل سهولة</p>
   </header>
 
-  <!-- ===================== 2. SERVICES ===================== -->
+  <!-- ===================== 2. WHITE FRIDAY OFFERS ===================== -->
   <section aria-labelledby="servicesTitle">
-    <h2 class="section-label" id="servicesTitle">اختاري الخدمة للحجز عبر واتساب</h2>
-    <!-- Cards are generated from BR_CONFIG.services -->
+    <h2 class="section-label" id="servicesTitle">عروض الجمعة البيضاء — احجزي عبر واتساب</h2>
+    <!-- Offer cards are generated from BR_CONFIG.services -->
     <ul class="cards" id="servicesList"></ul>
     <noscript>
-      <p style="text-align:center;color:#8B7176;font-size:14px">يرجى تفعيل JavaScript لعرض الخدمات والحجز عبر واتساب.</p>
+      <p style="text-align:center;color:#8B7176;font-size:14px">يرجى تفعيل JavaScript لعرض العروض والحجز عبر واتساب.</p>
     </noscript>
   </section>
 
@@ -708,6 +751,7 @@ img, svg { display: block; }
     window.dataLayer.push(payload);
 
     var st = window.BR_TRACKING || {}, L = st.loaded || {};
+
     if (st.mode !== 'direct') return;
     try {
       if (L.ga4 && window.brGtag) {
@@ -761,20 +805,19 @@ img, svg { display: block; }
     logoBox.innerHTML = '<img src="' + esc(C.logoUrl) + '" alt="' + esc(C.brandName) + '" width="96" height="96" decoding="async">';
   }
 
-  /* ---------- Render service cards ---------- */
+  /* ---------- Render offer cards ---------- */
   var list = document.getElementById('servicesList');
   list.innerHTML = (C.services || []).map(function (s) {
     var href = waHref(s.message);
-    return '<li><a class="card" href="' + esc(href || '#') + '"' +
+    return '<li><a class="card card--offer" href="' + esc(href || '#') + '"' +
       (href ? ' target="_blank" rel="noopener"' : ' data-unset="' + esc(MSG_NO_WA) + '"') +
       ' data-track="service" data-service="' + esc(s.id) + '" data-category="' + esc(s.category) + '"' +
-      ' aria-label="' + esc('احجزي عبر واتساب: ' + s.nameAr) + '">' +
+      ' aria-label="' + esc('احجزي عرض ' + s.nameAr + ' بسعر ' + s.price + ' ريال عبر واتساب') + '">' +
         '<span class="card__icon" aria-hidden="true">' + svg(ICONS[s.icon] || ICONS.hairColor) + '</span>' +
         '<span class="card__text">' +
           '<span class="card__title">' + esc(s.nameAr) + '</span>' +
-          (s.nameEn ? '<span class="card__subtitle" lang="en">' + esc(s.nameEn) + '</span>' : '') +
         '</span>' +
-        '<span class="card__arrow" aria-hidden="true">' + ARROW + '</span>' +
+        '<span class="offer__price" aria-hidden="true"><strong>' + esc(s.price) + '</strong><small>ريال</small></span>' +
       '</a></li>';
   }).join('');
 
